@@ -2,7 +2,7 @@
     "projects" : [
         {
             "title": "Loble",
-            "image": "../images/loble.png",
+            "image": "../assets/images/loble.png",
             "description": "Production grade L4 TCP Load Balancer with Round Robin, Random balancing strategies with Weights",
             "links": [
                 {
@@ -14,7 +14,7 @@
         },
         {
             "title": "Portfolio Craft",
-            "image": "../images/portfolio-craft-project.png",
+            "image": "../assets/images/portfolio-craft-project.png",
             "description": "Build your own Portfolio Website without coding with Portfolio Craft",
             "links": [
                 {
@@ -38,7 +38,7 @@
         },
         {
             "title": "Custom Kafka Impl.",
-            "image": "./images/kafka-project.png",
+            "image": "./assets/images/kafka-project.png",
             "description": "LinkedIn's Proposed Kafka Implementation in JavaScript",
             "links": [
                 {
@@ -67,7 +67,7 @@
         },
         {
             "title": "Deployment Bot",
-            "image": "./images/deployment-bot-project.png",
+            "image": "./assets/images/deployment-bot-project.png",
             "description": "Deploys any application using its Docker Img, GitHub Repo or Zip File",
             "links": [
                 {
@@ -91,7 +91,7 @@
         },
         {
             "title": "Pizza Planet App",
-            "image": "./images/pizza-planet-app-project.png",
+            "image": "./assets/images/pizza-planet-app-project.png",
             "description": "A Food Delivery App for Pizza Planet Restaurant",
             "links": [
                 {
@@ -110,7 +110,7 @@
         },
         {
             "title": "IITJ Menu App",
-            "image": "https://play-lh.googleusercontent.com/cAJ01ZCzINRNMFv0yQDCnTN8JEcAcAJLzbIPj7hXNaSHbZPO3gZKhzMlvJfoNz0wsg",
+            "image": "./assets/images/iitj-menu.png",
             "description": "1500+ Downloads | An App for displaying the monthly Mess Menu of IIT Jodhpur",
             "links": [
                 {
@@ -134,7 +134,7 @@
         },
         {
             "title": "Travel Companion App",
-            "image": "https://play-lh.googleusercontent.com/ZqML4eNZPwtbSb7E1m13Ct8z6Q23duSoK4rxwgEY1riwZwqivhMLbWk7329CWXj-WFo=w240-h480-rw",
+            "image": "./assets/images/travel-companion-app.png",
             "description": "An App for posting trips and finding people whom you can go with",
             "links": [
                 {
@@ -173,7 +173,7 @@
         },
         {
             "title": "App UpTime Tracker",
-            "image": "./images/app-uptime-tracker-project.png",
+            "image": "./assets/images/app-uptime-tracker-project.png",
             "description": "A Linux app for tracking uptime of your installed Apps",
             "links": [
                 {
@@ -202,7 +202,7 @@
         },
         {
             "title": "Simpulum",
-            "image": "./images/simpulum-project.png",
+            "image": "./assets/images/simpulum-project.png",
             "description": "A Game for learning the Time Period of a Pendulum Experiment",
             "links": [
                 {
@@ -221,7 +221,7 @@
         },
         {
             "title": "RTVP WebApp",
-            "image": "./images/rtvp-web-app-project.png",
+            "image": "./assets/images/rtvp-web-app-project.png",
             "description": "A WebApp for changing your camera bg with an Image/Video",
             "links": [
                 {
@@ -255,7 +255,7 @@
         },
         {
             "title": "Tic-Tac-Toe",
-            "image": "./images/tic-tac-toe-project.png",
+            "image": "./assets/images/tic-tac-toe-project.png",
             "description": "A Must try fun tic-tac-toe game with appealing UI",
             "links": [
                 {
@@ -318,7 +318,7 @@
         },
         {
             "title": "Vending DBMS",
-            "image": "./images/vending-machine-project.png",
+            "image": "./assets/images/vending-machine-project.png",
             "description": "A Website for Database Management of Vending Companies",
             "links": [
                 {

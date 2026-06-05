@@ -74,7 +74,7 @@
         },
         {
             "name" : "Hive",
-            "url" : "https://icon-icons.com/download-file?file=https%3A%2F%2Fimages.icon-icons.com%2F2699%2FPNG%2F512%2Fapache_hive_logo_icon_167868.png&id=167868&pack_or_individual=pack"
+            "url" : "./assets/apache_hive_logo_icon_167867.svg"
         },
         {
             "name" : "Spark",
