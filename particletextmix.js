@@ -109,7 +109,7 @@ class CreateParticles {
     this.buttom = false;
 
     this.data = {
-      text: "        HEYA,\nANADI SHARMA\n        HERE",
+      text: "        HELLO,\nYu Chen\n        HERE",
       amount: 1500,
       particleSize: 1,
       particleColor: 0xffffff,
