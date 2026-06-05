@@ -124,19 +124,18 @@
         return projectTile;
       }
 
-      function loadprojects() {
-        fetch("data/projects.json")
-          .then((res) => res.json())
-          .then((res) => res.projects)
-          .then((projects) => {
-            const projectContainer = document.querySelector(
-              ".project-tile-cntnr"
-            );
-            projects.forEach((project) => {
-              const projectTile = generateProjectTile(project);
-              projectContainer.appendChild(projectTile);
-            });
-          });
+      async function loadprojects() {
+        const response = await fetch("data/projects.json");
+        const data = await response.json();
+        const projects = data.projects;
+
+        const projectContainer = document.querySelector(
+          ".project-tile-cntnr"
+        );
+        projects.forEach((project) => {
+          const projectTile = generateProjectTile(project);
+          projectContainer.appendChild(projectTile);
+        });
       }
 
       loadprojects();
