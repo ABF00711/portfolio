@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="More About Myself, Anadi Sharma" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Charm&family=Courgette&family=Noto+Nastaliq+Urdu:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/cursor.png" type="image/x-icon">
+    <title>About Me - Anadi Sharma</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KC29K2JH6F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KC29K2JH6F');
+</script>
+<body class="abt_body">
+    <div class="trapy"></div>
+    <nav class="abt_nav">
+        <div class="navbs">
+            <button class="" onclick="location.href='index.html' ">
+                Home
+            </button>
+            <button class="" onclick="location.href='projects.html' ">
+                Projects
+            </button>
+            <button class="" onclick="location.href = 'skills.html' ">
+                Skills
+            </button>
+            <button class="" onclick="location.href='about.html'">
+                About
+            </button>
+        </div>
+    </nav>
+    <main class="about">
+        <div class="me">
+            <img src="./images/Anadi_Sharma4.jpeg" alt="">
+        </div>
+        <div class="content">
+            Anadi Sharma
+            <div class="size-box" style="height: 12px;"></div>
+            <p>
+                Heya! Currently I'm a Software Engineer at BNY (Bank of New York)
+                <br><br>
+                I completed my B.Tech in Computer Science and Engineering from IIT Jodhpur in 2025.
+                <br><br>
+                My main hobby is building new things and exploring different areas of tech.
+                <br><br>
+                If you want to know more about me, check out the Projects and Skills sections!
+                <br><br>
+                Wanna talk? Let's have a quick <a href="https://calendly.com/s-anadi0503/30min" style="color: blue">chat</a>
+                <br><br>
+                Always up for collaboration on exciting projects. Feel free to reach out!
+            </p>
+        </div>
+    </main>
+    <main id="main_canv"></main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script>
+        VANTA.WAVES({
+            el: "#main_canv",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x20230,
+            shininess: 4.00,
+            waveSpeed: 2.00,
+            waveHeight: 4.00,
+            zoom: 0.82
+        })
+    </script>
+
+    <div class="trapy2"></div>
+    <div class="profiles">
+        <a href="https://github.com/asharma538" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt=""></a>
+        <a href="mailto:s.anadi0503@gmail.com" target="_blank"><img src="https://www.svgrepo.com/show/330519/gmail.svg" alt=""></a>
+    </div>
+</body>
+</html>
