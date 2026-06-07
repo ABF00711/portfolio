@@ -109,7 +109,7 @@ class CreateParticles {
     this.buttom = false;
 
     this.data = {
-      text: "        HELLO,\nYu Chen\n        HERE",
+      text: "        HELLO,\nYu-Chen\nFull Stack-AI\n   Developer",
       amount: 1500,
       particleSize: 1,
       particleColor: 0xffffff,
