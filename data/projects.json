@@ -1,6 +1,18 @@
 {
     "projects" : [
         {
+            "title": "Rogue Combat System",
+            "image": "./assets/images/roblox-combat-system.png",
+            "description": "Roblox Studio combat system built in Luau — scripted client/server logic, health UI, weapon slots, and animation triggers to connect existing character models and animations into playable combat.",
+            "links": [
+                {
+                    "url": "https://create.roblox.com/",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/5/58/Roblox_2018_O_Icon_final.png",
+                    "alt": "Roblox Studio"
+                }
+            ]
+        },
+        {
             "title": "Loble",
             "image": "../assets/images/loble.png",
             "description": "Production grade L4 TCP Load Balancer with Round Robin, Random balancing strategies with Weights",
