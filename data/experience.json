@@ -2,6 +2,7 @@
     "experience": [
         {
             "company": "Freelancer — Self Employed",
+            "logo": "./assets/company-icon/freelancer.png",
             "website": null,
             "location": "Taipei, Taiwan",
             "role": "Full Stack-AI Developer",
@@ -11,6 +12,7 @@
         },
         {
             "company": "Zenith Nets",
+            "logo": "./assets/company-icon/zenithnets.png",
             "website": "https://zenithnets.com",
             "location": "Brooklyn, New York City, USA",
             "role": "Full Stack-AI Developer",
@@ -20,6 +22,7 @@
         },
         {
             "company": "CyberSecThreat",
+            "logo": "./assets/company-icon/cybersecthreat.png",
             "website": "https://cybersecthreat.com",
             "location": "New Taipei City, Taiwan",
             "role": "Backend Developer",
@@ -29,6 +32,7 @@
         },
         {
             "company": "4iTech",
+            "logo": "./assets/company-icon/4itech.png",
             "website": "https://4itech.io",
             "location": "Taipei, Taiwan",
             "role": "Frontend Developer",

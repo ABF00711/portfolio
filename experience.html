@@ -81,6 +81,9 @@
           index % 2 === 0 ? "exp-box-left" : "exp-box-right"
         );
 
+        const content = document.createElement("div");
+        content.classList.add("exp-content");
+
         const title = document.createElement("div");
         title.classList.add("exp-title");
         if (entry.website) {
@@ -106,10 +109,10 @@
         location.classList.add("exp-location");
         location.textContent = entry.location;
 
-        box.appendChild(title);
-        box.appendChild(role);
-        box.appendChild(dates);
-        box.appendChild(location);
+        content.appendChild(title);
+        content.appendChild(role);
+        content.appendChild(dates);
+        content.appendChild(location);
 
         if (entry.website) {
           const website = document.createElement("a");
@@ -118,7 +121,22 @@
           website.target = "_blank";
           website.rel = "noopener noreferrer";
           website.textContent = entry.website.replace(/^https?:\/\//, "");
-          box.appendChild(website);
+          content.appendChild(website);
+        }
+
+        box.appendChild(content);
+
+        if (entry.logo) {
+          const logoWrap = document.createElement("div");
+          logoWrap.classList.add("exp-logo-wrap");
+
+          const logoImg = document.createElement("img");
+          logoImg.classList.add("exp-logo");
+          logoImg.src = entry.logo;
+          logoImg.alt = `${entry.company} logo`;
+
+          logoWrap.appendChild(logoImg);
+          box.appendChild(logoWrap);
         }
 
         main.appendChild(box);
