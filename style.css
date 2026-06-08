@@ -449,7 +449,7 @@ nav button:hover {
 
 .trapy_idx {
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     width: 87%;
     left: 50%;
     translate: -50%;
@@ -479,6 +479,8 @@ nav button:hover {
     height: 60px;
     background-color: #f7f7ff;
     transform: perspective(100px) rotateX(32deg) translateY(2px);
+    z-index: 10;
+    pointer-events: none;
 }
 
 
@@ -655,5 +657,85 @@ nav button:hover {
 
     &:hover {
         scale: 1.05;
+    }
+}
+
+/* Experience Page — vertical timeline */
+.exp-timeline-page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 120px;
+}
+
+.exp-time-axis {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    min-height: 1400px;
+    border-right: 1px dashed white;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.exp-timeline-cntnr {
+    position: relative;
+    z-index: 0;
+}
+
+.exp-main_timeline {
+    margin-top: 140px;
+}
+
+.exp-main_timeline:first-child {
+    margin-top: 100px;
+}
+
+.exp-box {
+    height: auto;
+    min-height: 190px;
+}
+
+.exp-box .hdg a {
+    color: white;
+    text-decoration: none;
+}
+
+.exp-box .hdg a:hover {
+    color: rgb(200, 230, 255);
+}
+
+.exp-timeline-link {
+    color: rgb(200, 230, 255);
+    text-decoration: none;
+}
+
+.exp-timeline-link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    .exp-time-axis {
+        display: none;
+    }
+
+    .exp-main_timeline {
+        margin-top: 80px;
+    }
+
+    .exp-main_timeline:first-child {
+        margin-top: 90px;
+    }
+
+    .exp-box.boxl,
+    .exp-box.boxr {
+        left: 50%;
+        transform: translateX(-50%);
+        width: min(400px, 88vw);
+    }
+
+    .exp-box.boxr:hover {
+        transform: translateX(-50%) scale(1.05);
     }
 }

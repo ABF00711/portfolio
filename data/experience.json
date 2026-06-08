@@ -1,0 +1,40 @@
+{
+    "experience": [
+        {
+            "company": "Freelancer — Self Employed",
+            "website": null,
+            "location": "Taipei, Taiwan",
+            "role": "Full Stack-AI Developer",
+            "workType": "remote",
+            "start": "2026-06-01",
+            "end": null
+        },
+        {
+            "company": "Zenith Nets",
+            "website": "https://zenithnets.com",
+            "location": "Brooklyn, New York City, USA",
+            "role": "Full Stack-AI Developer",
+            "workType": "remote",
+            "start": "2024-11-01",
+            "end": "2025-05-24"
+        },
+        {
+            "company": "CyberSecThreat",
+            "website": "https://cybersecthreat.com",
+            "location": "New Taipei City, Taiwan",
+            "role": "Backend Developer",
+            "workType": "hybrid",
+            "start": "2021-07-11",
+            "end": "2024-05-12"
+        },
+        {
+            "company": "4iTech",
+            "website": "https://4itech.io",
+            "location": "Taipei, Taiwan",
+            "role": "Frontend Developer",
+            "workType": "hybrid",
+            "start": "2018-10-16",
+            "end": "2021-03-30"
+        }
+    ]
+}
