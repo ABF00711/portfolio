@@ -48,23 +48,10 @@
 
     <div class="exp-timeline-page">
       <div class="exp-time-axis"></div>
-      <div class="area">
-        <ul class="circles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
       <div class="exp-timeline-cntnr"></div>
     </div>
 
+    <div class="project-bg-text">Yu-Chen</div>
     <div class="trapy3"></div>
 
     <script>
@@ -86,42 +73,55 @@
 
       const generateTimelineEntry = (entry, index) => {
         const main = document.createElement("main");
-        main.classList.add("main_timeline", "exp-main_timeline");
+        main.classList.add("exp-main_timeline");
 
         const box = document.createElement("div");
-        box.classList.add("box", "exp-box", index % 2 === 0 ? "boxl" : "boxr");
+        box.classList.add(
+          "exp-box",
+          index % 2 === 0 ? "exp-box-left" : "exp-box-right"
+        );
 
-        const heading = document.createElement("div");
-        heading.classList.add("hdg");
+        const title = document.createElement("div");
+        title.classList.add("exp-title");
         if (entry.website) {
           const link = document.createElement("a");
           link.href = entry.website;
           link.target = "_blank";
           link.rel = "noopener noreferrer";
           link.textContent = entry.company;
-          heading.appendChild(link);
+          title.appendChild(link);
         } else {
-          heading.textContent = entry.company;
+          title.textContent = entry.company;
         }
 
-        const description = document.createElement("div");
-        description.classList.add("desc");
-        description.innerHTML = [
-          `${entry.role} · ${capitalize(entry.workType)}`,
-          "",
-          formatDateRange(entry.start, entry.end),
-          "",
-          entry.location,
-          entry.website
-            ? `<br><br><a class="exp-timeline-link" href="${entry.website}" target="_blank" rel="noopener noreferrer">${entry.website.replace(/^https?:\/\//, "")}</a>`
-            : "",
-        ].join("<br>");
+        const role = document.createElement("div");
+        role.classList.add("exp-role");
+        role.textContent = `${entry.role} · ${capitalize(entry.workType)}`;
 
-        box.appendChild(heading);
-        box.appendChild(document.createElement("br"));
-        box.appendChild(description);
+        const dates = document.createElement("div");
+        dates.classList.add("exp-dates");
+        dates.textContent = formatDateRange(entry.start, entry.end);
+
+        const location = document.createElement("div");
+        location.classList.add("exp-location");
+        location.textContent = entry.location;
+
+        box.appendChild(title);
+        box.appendChild(role);
+        box.appendChild(dates);
+        box.appendChild(location);
+
+        if (entry.website) {
+          const website = document.createElement("a");
+          website.classList.add("exp-link");
+          website.href = entry.website;
+          website.target = "_blank";
+          website.rel = "noopener noreferrer";
+          website.textContent = entry.website.replace(/^https?:\/\//, "");
+          box.appendChild(website);
+        }
+
         main.appendChild(box);
-
         return main;
       };
 
